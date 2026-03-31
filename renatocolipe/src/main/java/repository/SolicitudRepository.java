@@ -8,5 +8,26 @@ import java.util.List;
 import java.util.Optional;
 
 public class SolicitudRepository {
+  private List<Solicitud> solicitudes = new ArrayList<>();
+
+    public List<Solicitud> obternerTodas(){
+        return solicitudes;
+    }
+    public void guardar(Solicitud solicitud){
+        solicitudes.add(solicitud);
+    }
+    public Optional<Solicitud> buscarPorId(int id){
+        return solicitudes.stream().filter(s -> s.getId() == id).findFirst();
+    }
+    public void eliminar (int id){
+        solicitudes.removeIf(s -> s.getId() == id);
+    }
+    public void actualizar(Solicitud solicitud){
+        eliminar(solicitud.getId());
+        guardar(solicitud);
+    }
+
+
+  
 
 }

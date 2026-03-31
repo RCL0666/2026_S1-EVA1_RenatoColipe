@@ -31,5 +31,23 @@ public class Solicitud {
         this.FechaRegistro = FechaRegistro;
         this.NivelPrioridad = NivelPrioridad;
     } 
+      //Getters y Setters
+    public int getId() {return id;}
+    public void setId(int id) {this.id = id;}
+
+    public String getPaciente() {return Paciente;}
+    public void setPaciente(String paciente) {this.Paciente = paciente;}
+
+    public String getEspecialidad() {return Especialidad;}
+    public void setEspecialidad(String especialidad) {this.Especialidad = especialidad;}
+
+    public String getEstado() {return Estado;}
+    public void setEstado(String estado) {this.Estado = estado;}
+
+    public LocalDate getFechaRegistro() {return FechaRegistro;}
+    public void setFechaRegistro(LocalDate fechaRegistro) {this.FechaRegistro = fechaRegistro;}
+
+    public String getNivelPrioridad() {return NivelPrioridad;}
+    public void setNivelPrioridad(String nivelPrioridad) {this.NivelPrioridad = nivelPrioridad;}
 
 }

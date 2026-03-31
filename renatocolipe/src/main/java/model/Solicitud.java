@@ -23,10 +23,13 @@ public class Solicitud {
     @NotBlank(message = "El Nivel de prioridad es obligatorio")
     private String NivelPrioridad; 
 
-
-
-
-    
-
+      public Solicitud(int id , String Paciente, String Especialidad, String Estado, LocalDate FechaRegistro, String NivelPrioridad) {
+        this.id = id;
+        this.Paciente = Paciente;
+        this.Especialidad = Especialidad;
+        this.Estado = Estado;
+        this.FechaRegistro = FechaRegistro;
+        this.NivelPrioridad = NivelPrioridad;
+    } 
 
 }

@@ -15,4 +15,28 @@ import java.util.Optional;
 @Service
 public class SolicitudService {
 
+    @Autowired
+    private SolicitudRepository solicitudRepository;
+
+    public List<Solicitud> ListarSolicitudes() {
+        return solicitudRepository.obtenerTodas();
+    }
+    public void registrarSolicitud(Solicitud solicitud) {
+        solicitudRepository.guardar(solicitud);
+    }
+    public Optional<Solicitud> obternerPorId(int id) {
+        return solicitudRepository.buscarPorId(id);
+    }
+    public void actualizarSolicitud(Solicitud solicitud) {
+        solicitudRepository.actualizar(solicitud);
+    }
+    public void eliminarSolicitud(int id) {
+        solicitudRepository.eliminar(id);
+    }
+    public List<Solicitud> filtrarPorPrioridad(String prioridad) {
+        return solicitudRepository.filtrarPorPrioridad(prioridad);
+    }
 }
+
+
+

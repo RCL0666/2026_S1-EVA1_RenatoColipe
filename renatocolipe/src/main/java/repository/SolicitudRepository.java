@@ -1,7 +1,8 @@
-package repository;
+package cl.duoc.renatocolipe.repository;
 
-import model.Solicitud;
 import org.springframework.stereotype.Repository;
+
+import cl.duoc.renatocolipe.model.Solicitud;
 
 import java.util.ArrayList;
 import java.util.List;

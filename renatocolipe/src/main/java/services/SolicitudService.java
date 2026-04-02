@@ -10,6 +10,9 @@ import cl.duoc.renatocolipe.repository.SolicitudRepository;
 import java.util.List;
 import java.util.Optional;
 
+
+
+@Service
 public class SolicitudService {
 
 }

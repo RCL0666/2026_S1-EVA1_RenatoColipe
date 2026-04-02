@@ -15,21 +15,27 @@ public class SolicitudRepository {
     public List<Solicitud> obternerTodas(){
         return solicitudes;
     }
+    
     public void guardar(Solicitud solicitud){
         solicitudes.add(solicitud);
     }
+    
     public Optional<Solicitud> buscarPorId(int id){
         return solicitudes.stream().filter(s -> s.getId() == id).findFirst();
     }
+    
     public void eliminar (int id){
         solicitudes.removeIf(s -> s.getId() == id);
     }
+    
     public void actualizar(Solicitud solicitud){
         eliminar(solicitud.getId());
         guardar(solicitud);
     }
 
-
-  
-
-}
+    public List<Solicitud> filtrarPorPrioridad(String prioridad) {
+        return solicitudes.stream()
+                .filter(s -> s.getNivelPrioridad().equalsIgnoreCase(prioridad))
+                .toList();
+    }
+  }

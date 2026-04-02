@@ -10,6 +10,9 @@ import cl.duoc.renatocolipe.services.SolicitudService;
 
 import java.util.List;
 
+@RestController
+@RequestMapping("/api/v1/solicitudes")
+
 public class SolicitudController {
 
 }

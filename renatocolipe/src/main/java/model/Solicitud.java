@@ -21,7 +21,10 @@ public class Solicitud {
     private LocalDate fechaRegistro;
 
     @NotBlank(message = "El Nivel de prioridad es obligatorio")
-    private String nivelPrioridad; 
+    private String nivelPrioridad;
+
+    public Solicitud() { //contructor vacio
+    }
 
       public Solicitud(int id , String Paciente, String Especialidad, String Estado, LocalDate FechaRegistro, String NivelPrioridad) {
         this.id = id;

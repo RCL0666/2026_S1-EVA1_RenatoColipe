@@ -5,6 +5,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;                     
 import org.springframework.web.bind.annotation.*;
 
+import cl.duoc.renatocolipe.model.Solicitud;
+import cl.duoc.renatocolipe.services.SolicitudService;
+
+import java.util.List;
+
 public class SolicitudController {
 
 }

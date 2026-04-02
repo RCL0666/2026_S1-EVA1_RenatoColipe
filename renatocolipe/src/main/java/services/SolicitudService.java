@@ -6,6 +6,10 @@ import org.springframework.stereotype.Service;
 import cl.duoc.renatocolipe.model.Solicitud;
 import cl.duoc.renatocolipe.repository.SolicitudRepository;
 
+
+import java.util.List;
+import java.util.Optional;
+
 public class SolicitudService {
 
 }

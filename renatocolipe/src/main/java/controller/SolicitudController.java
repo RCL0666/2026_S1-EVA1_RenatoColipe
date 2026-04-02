@@ -12,7 +12,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/solicitudes")
-
 public class SolicitudController {
+  @Autowired
+  
 
 }
